@@ -1,0 +1,17 @@
+[package]
+name = "bdsx_tps_info"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "bdsx_tps_info"
+crate-type = ["cdylib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+lazy_static = "1.4.0"
+detour = "0.8.1"
+libc = "0.2.146"
+cxx = "1.0.97"
+winapi = { version = "0.3.9", features = ["winbase"] }
